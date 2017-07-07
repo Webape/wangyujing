@@ -1,0 +1,117 @@
+.mood {
+    padding: 0 10px;
+    border-bottom: 1px dashed #ccc;
+    background-color: #F7F6F1;
+    border: 1px solid rgba(255,255,255,.8);
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    border-radius: 3px;
+    position: relative;
+}
+h1 {
+	border-bottom: 1px solid #e8e2d2;
+}
+.now {
+	width: 60px;
+	height: 30px;
+	background-color: #00a1d6;
+	border: 1px solid #00a1d6;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	margin: 40px 0 0 230px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.mood-msg li {
+	height: 70px;
+}
+
+.mood-msg .date {
+	line-height: 70px;
+	text-align: center;
+	float: left;
+	width: 170px;
+	font-size: 20px;
+	color: #666;
+	padding-left: 90px;
+	position: relative;
+}
+.mood-msg .msg-box {
+	float: left;
+	height: 70px;
+	border-left: 2px solid #999;
+	position: relative;
+}
+.msg-box .box {
+	display: block;
+	color: #867f6f;
+	border: 1px solid #ccc;
+	font-size: 16px; 
+	line-height: 50px;
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 0 10px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.msg-box .box:hover {
+	color: #000;
+}
+.date .point {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	right: -11px;
+	top: 26px;
+	background-color: #fff;
+	z-index: 10;
+}
+.point-in {
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 4px solid #e8e2d2;
+	margin: 3px auto;
+}
+.msg-box .arrow {
+	border-right: 8px solid #ccc;
+	border-left: 8px solid transparent;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	position: absolute;
+	left: 43px;
+	top: 50%;
+	width: 0;
+	height: 0;
+	margin-top: -8px;
+	border-left-width: 0;
+}
+.arrow::before {
+	content:"";
+	border-right: 7px solid #fff;
+	border-bottom: 7px solid transparent;
+	border-top: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-left-width: 0;
+	position: absolute;
+	left: 1px;
+	top: -7px;
+	z-index: 12;
+	width: 0;
+	height: 0;
+}
+.point .point-on {
+	border-color: #00a1d6;
+}
+.header-link .line {
+    background-color: #93c;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+}

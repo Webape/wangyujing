@@ -1,0 +1,33 @@
+.album {
+	padding: 0 10px;
+    border-bottom: 1px dashed #ccc;
+    background-color: #F7F6F1;
+    border: 1px solid rgba(255,255,255,.8);
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    border-radius: 3px;
+    position: relative;
+}
+.album .wrap {
+	position: relative;
+}
+.album img {
+	width: 120px;
+	vertical-align: top;
+}
+.album .frame {
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 4px #999;
+	border-radius: 4px;
+	background-color: #fff;
+	float: left;
+}
+.header-link .line {
+    background-color: #93c;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+}

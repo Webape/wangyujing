@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简历</title>
+	<link rel="stylesheet" href="../css/jquery.fullPage.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/jquery.fullPage.min.js"></script>
+	<style>
+		html,body {
+			width: 100%;
+			height: 100%;
+		}
+		.section img {
+			width: 150px;
+			border-radius: 50%;
+			padding: 10px;
+		}
+		.fir-page {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="dowebok">
+		<div class="section fir-page">
+			<img src="../images/wyj.jpg" alt="">
+		</div>
+		<div class="section"></div>
+		<div class="section"></div>
+		<div class="section"></div>
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function(){
+		$("#dowebok").fullpage();
+	})
+</script>

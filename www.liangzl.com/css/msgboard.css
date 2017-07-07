@@ -1,0 +1,177 @@
+/* page styles */
+.msgboard {
+	padding: 0 10px;
+    border-bottom: 1px dashed #ccc;
+    background-color: #F7F6F1;
+    border: 1px solid rgba(255,255,255,.8);
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    border-radius: 3px;
+    padding-bottom: 100px;
+}
+.msgboard h1.title {
+	border-bottom: 1px solid #e8e2d2;
+}
+.msg-content {
+	padding-left: 40px;
+}
+.pages {
+	font-size: 18px;
+	color: #666;
+	line-height: 50px;
+}
+.comment li {
+	height: 150px;
+	position: relative;
+	border-left: 1px solid #999;
+}
+.comment .head-pic {
+	position: absolute;
+	left: -26px;
+	top: 0;
+}
+.comment .head-pic img {
+	padding: 3px;
+	border: 2px solid #90f;
+	width: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.comment .msgbox {
+	border: 1px solid #ccc;
+	height: 130px;
+	margin-left: 50px;
+	border-radius: 5px;
+	background-color: #fff;
+	position: relative;
+}
+.comment .msgbox::before {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 10px solid #ccc;
+	border-left: none;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	left: -10px;
+	top: 10px;
+}
+.comment .msgbox::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 9px solid #fff;
+	border-left: none;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	left: -9px;
+	top: 11px;
+}
+.comment .username {
+	color: #90f;
+	font-size: 18px;
+	padding-left: 10px;
+	border-bottom: 1px solid #ccc;
+	line-height: 32px;
+}
+.comment span {
+	color: #333;
+	font-size: 12px;
+	float: right;
+	padding-right: 10px;
+}
+.comment .msg {
+	padding-top: 10px;
+}
+.comment .txt {
+	font-size: 14px;
+	color: #333;
+	font-weight: lighter;
+	padding-left: 20px;
+}
+.comment .date {
+	padding: 45px 0 0 650px;
+}
+.comment li:last-child {
+	border-left: 0;
+}
+.sm-msg input {
+	width: 320px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px #ccc inset;
+	padding-left: 30px;
+	color: #666;
+
+}
+.sm-msg span {
+	color: #333;
+	font-size: 14px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.name-in {
+	position: relative;
+	float: left;
+	margin-right: 30px;
+}
+.email-in {
+	position: relative;
+	float: left;
+}
+textarea {
+	margin: 10px 10px;
+	width: 726px; 
+	height:150px;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-left: auto;
+	margin-top: 10px;
+    outline: 0; 
+    border: 1px solid #a0b3d6; 
+    font-size: 12px; 
+    word-wrap: break-word;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+ 	border-radius:5px;
+ 	box-shadow: 0 2px 2px #ccc inset;
+ 	color: #333;
+}
+.sm-msg button {
+	background-color: lightblue;
+	border: none;
+	color: #fff;
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin-right: 85px;
+}
+.success {
+	position: fixed;
+	width: 140px;
+	height: 40px;
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
+	line-height: 40px;
+	left: 50%;
+	top: 50%;
+	margin-left: -70px;
+	margin-top: -20px;
+	color: #fff;
+	display: none;
+	font-size: 14px;
+	font-weight: lighter;
+	letter-spacing: 5px;
+}
+.header-link .line {
+    background-color: #93c;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    left: 300px;
+    bottom: 0;
+}
