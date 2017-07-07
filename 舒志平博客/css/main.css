@@ -1,0 +1,366 @@
+/*css reset*/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:14px/1.5 "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;color: #ccc;}
+ol,ul{list-style:none}
+a{text-decoration:none}
+fieldset,img{border:0;vertical-align:top;}
+a,input,button,select,textarea{outline:none;}
+a,button{cursor:pointer;}
+i{font-style: normal}
+.clearfix{clear:both;}
+body,html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background-color: rgb(181,207,189);
+}
+.container {
+	height: 100%;
+	width: 1170px;
+	margin: 0 auto;
+	box-shadow: 0 0 14px #333;
+}
+
+/*页面左侧开始*/
+aside {
+	width: 200px;
+	background-color: black;
+	height: 100%;
+	float: left;
+	position: fixed;
+}
+aside .home {
+	padding-top: 20px;
+	color: #ddd;
+	text-align: center;
+}
+aside .home span {
+	font-size: 18px;
+	font-weight: 800;
+	padding-left: 10px;
+}
+aside .home i {
+	font-size: 20px;
+}
+aside .resume {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #fff;
+}
+aside .resume img {
+	width: 96px;
+	height: auto;
+	border-radius: 50%;
+	padding-bottom: 10px;
+}
+aside .resume p {
+	font-size: 12px;
+}
+aside .nav {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 30px;
+}
+aside .nav h2 {
+	font-size: 12px;
+	padding-left: 10px;
+	font-weight: 400;
+	line-height: 30px;
+}
+aside .nav ul li a {
+	display: block;
+	width: 100%;
+	line-height: 30px;
+	color: #ccc;
+}
+aside .nav ul a i {
+	display: inline-block;
+	width: 30px;
+	padding-left: 30px;
+}
+.dropnav .list {
+	line-height: 30px;
+	cursor: pointer;
+}
+.dropnav h2 {
+	font-size: 12px;
+	padding-left: 10px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.dropnav .list i {
+	display: inline-block;
+	width: 30px;
+	padding-left: 30px;
+}
+.dropnav .list span {
+	color: #fff;
+}
+.dropnav .list i.angle {
+	float: right;
+	line-height: 30px;
+}
+.dropnav ul {
+	display: none;
+}
+.dropnav ul li {
+	text-align: center;
+	line-height: 30px;
+}
+.dropnav ul li a {
+	color: #999;
+}
+/*页面左侧结束*/
+
+
+/*页面右侧内容开始*/
+.content {
+	background-color: rgb(246,248,248);
+	float: left;
+	width: 970px;
+	padding-left: 200px;
+}
+.content nav {
+	background-color: #fff;
+	line-height: 50px;
+	box-shadow: 0 1px 3px #666;
+	position: fixed;
+	z-index: 20;
+	width: 970px;
+}
+.content nav i {
+	color: #333;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.content .search {
+	display: inline-block;
+	position: relative;
+}
+.content label.icon {
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	color: #333;
+}
+.content nav input.keysearch {
+	width: 150px;
+	height: 30px;
+	padding-left: 7px;
+	margin-left: 15px;
+	border-radius: 15px;
+	border: none;
+	background-color: rgb(237,241,242);
+	font-size: 12px;
+	color: #333;
+
+}
+.content nav input::-webkit-input-placeholder { /* WebKit browsers */ 
+	color: #999; 
+} 
+
+.content nav input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+	color: #999; 
+} 
+.content nav input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+	color: #999; 
+} 
+.content nav input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	color: #999; 
+}
+.content i.ring {
+	float: right;
+	line-height: 50px;
+	margin-right: 30px;
+}
+.content a.login {
+	float: right;
+	width: 100px;
+	text-align: center;
+	color: #333;
+}
+.content a.login:hover {
+	background-color: #eee;
+}
+.content a.login i {
+	padding-left: 5px;
+}
+.content .register {
+	position: fixed;
+	width: 250px;
+	height: 200px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	right: 174px;
+	display: none;
+}
+.content .register label {
+	display: block;
+	color: #333;
+	line-height: 16px;
+	padding: 10px 0 0 20px;
+}
+.content .register input {
+	display: block;
+	padding-left: 3px;
+	width: 200px;
+	margin: 12px auto;
+	color: #333;
+	height: 25px;
+}
+.content .register button {
+	display: block;
+	width: 207px;
+	margin: 0 auto;
+	color: #fff;
+	background-color: purple;
+	border: 0;
+	line-height: 25px;
+	font-size: 12px;
+}
+.content .ibody {
+	padding-top: 50px;
+}
+.content .ibody .main-content {
+	width: 800px;
+	float: left;
+}
+.content .phrase {
+	border-bottom: 1px solid #ccc;
+}
+.content .phrase p {
+	color: #333;
+	font-size: 16px;
+	font-weight: lighter;
+	padding: 20px 0 0 15px;
+}
+.content .phrase p:last-of-type {
+	color: #666;
+	font-size: 12px;
+	padding-top: 0;
+	padding-bottom: 30px;
+}
+.content .ibody article {
+	width: 94%;
+	margin: 20px auto;
+	background-color: #fff;
+	padding-bottom: 20px;
+}
+.content .ibody article img {
+	width: 100%;
+	height: auto;
+	border: 1px solid #fff;
+}
+.content .ibody article .title {
+	color: #666;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.content .ibody article .title h1 {
+	font-size: 28px;
+	font-weight: 400;
+	color: #333;
+}
+article .article-msg {
+	color: #666;
+	padding-left: 20px;
+}
+article .article-msg i {
+	padding: 10px 10px 0 20px;
+}
+/*页面右侧内容结束*/
+
+/*右侧tab内容开始*/
+.content .ibody .tab {
+	width: 169px;
+	float: left;
+	background-color: #fff;
+	border-left: 1px solid #ccc;
+	color: #333;
+	padding-bottom: 30px;
+}
+.content .ibody .tab span.tabs {
+	display: block;
+	float: left;
+	width: 56px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	color: #666;	
+}
+.content .ibody .tab span.line {
+	border-bottom: 1px solid rgb(123,212,239);
+}
+.content .ibody .tab h1 {
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 40px;
+	padding-left: 10px;
+}
+.ibody .tab ul li {
+	padding: 10px 0 10px 10px;
+}
+.ibody .tab ul li:last-of-type {
+	padding-bottom: 40px;
+}
+.ibody .tab ul li img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+}
+.ibody .tab ul li .description {
+	float: left;
+	width: 100px;
+	padding-left: 10px;
+	font-size: 12px;
+	cursor: default;
+}
+.ibody .tab ul li .description p:last-of-type {
+	color: #666;
+}
+.ibody .tab ul li .description span {
+	padding: 0 15px 0 5px;
+}
+.tab .catalogue {
+	border: 1px solid rgb(235,240,241);
+	width: 90%;
+	margin: 0 auto;
+	line-height: 40px;
+	color: #666;
+	border-radius: 5px;
+}
+.tab .catalogue > div + div {
+	border-top: 1px solid rgb(235,240,241);
+}
+.tab .catalogue .menu {
+	padding-left: 10px;
+}
+.tab .catalogue span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #ccc;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	text-shadow: 0 1px 1px #333;
+	margin-left: 40px;
+}
+.tab .new-comment {
+	font-size: 12px;
+	color: #999;
+	line-height: 40px;
+}
+.tab .new-comment span {
+	padding-left: 10px;
+}
+.tab-hide {
+	display: none;
+}
+/*右侧tab内容结束*/
