@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>极客学院-注册</title>
+    <link rel="stylesheet" href="css/regit.css">
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+      <script src="js/jquery-1.11.1.min.js"></script>
+      <script src="js/regit.js"></script>
+  </head>
+  <body>
+    <div class="regit-box">
+      <div class="jike-logo">
+        <a href="#">
+          <img src="images/logo.png" style="width: 150px" alt=""/>
+        </a>
+      </div>
+      <div class="content">
+        <div class="content-regit">
+          <p class="new-user">新用户注册</p>
+          <div class="input-tel">
+            <label for="tel" id="tel_label">请输入手机号</label>
+            <input type="text" id="tel"/>
+            <span class="alert" id="tel_alert">请输入手机号</span>
+          </div>
+          <div class="input-password">
+            <label for="password" id="password_label">输入6~32位密码</label>
+            <input type="password" id="password"/>
+            <span class="alert" id="password_alert">请输入密码</span>
+          </div>
+          <div class="password-grade" id="password-grade">
+            <span id="thin">弱</span>
+            <span id="middle">中</span>
+            <span id="strong">高</span>
+          </div>
+          <div class="slide">
+            <div class="slide-square">&gt&gt</div>
+            <div class="slide-bar">请按住滑块，拖动到最右边</div>
+            <span>请滑动验证</span>
+          </div>
+          <div class="yanzhengma">
+            <label for="yanzhengma" id="yanzhengma_label">动态码</label>
+            <input type="text" id="yanzhengma"/>
+            <button>获取动态码</button>
+          </div>
+          <div class="agree">
+            <input type="checkbox" class="checkbox"/><a href="#">同意极客学院用户协议</a>
+          </div>
+          <input type="submit" value="注册" class="submit"/>
+        </div>
+        <div class="content-soc">
+            <p>已有账号 <a href="#">立即登录</a></p>
+            <div class="soc-list">
+                <span class="title">快速登录</span>
+                <span class="fa fa-qq blue"></span>
+                <span class="fa fa-weibo"></span>
+                <span class="fa fa-wechat green"></span>
+                <span class="fa fa-apple grey"></span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

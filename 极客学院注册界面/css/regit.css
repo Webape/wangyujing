@@ -1,0 +1,217 @@
+/*初始化  reset*/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;color: #666;}
+ol,ul{list-style:none}
+a{text-decoration:none}
+fieldset,img{border:0;vertical-align:top;}
+a,input,button,select,textarea{outline:none;}
+a,button{cursor:pointer;}
+
+body {
+  background: url(../images/rebc.gif);
+}
+.regit-box {
+  width: 820px;
+  margin: 0 auto;
+}
+.jike-logo {
+  padding-top: 100px;
+  text-align: center;
+}
+.content {
+  height: 445px;
+  box-shadow: 0 4px 6px #C9CACB;
+  background-color: #fff;
+  margin-top: 30px;
+}
+.content .content-regit {
+  float: left;
+  width: 410px;
+  margin-top: 50px;
+  border-right: 1px solid #FAFAFA;
+  padding: 0 0 0 40px;
+}
+.content .content-soc {
+  float: left;
+  width: 369px;
+}
+.content p.new-user {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.content-regit .input-tel {
+  position: relative;
+}
+.content-regit .input-password {
+  position: relative;
+}
+.content-regit input {
+  width: 370px;
+  height: 40px;
+  padding-left: 3px;
+  border: 1px solid #E4E4E4;
+  border-right: none;
+  margin-top: 10px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.content-regit label {
+  position: absolute;
+  left: 5px;
+  top: 22px;
+  color: #ADADAD;
+  cursor: text;
+}
+.password-grade {
+  margin-top: 5px;
+}
+.content-regit span.alert {
+  position: absolute;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 3px;
+  width: 80px;
+  height: 30px;
+  background-color: orange;
+  right: 40px;
+  top: 17px;
+  color: #fff;
+  display: none;
+}
+.password-grade span {
+  display: inline-block;
+  width: 60px;
+  height: 15px;
+  background-color: #DDDDDD;
+  text-align: center;
+  line-height: 15px;
+  color: #fff;
+}
+.slide {
+  height: 35px;
+  margin-top: 5px;
+}
+.slide .slide-square {
+  position: absolute;
+  width: 40px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  height: 33px;
+  cursor: pointer;
+}
+.slide-bar {
+  width: 280px;
+  background-color: #E8E8E8;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #9C9C9C;
+  float: left;
+}
+.slide span {
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  line-height: 35px;
+}
+.content-regit .yanzhengma {
+  position: relative;
+}
+.content-regit button {
+  width: 90px;
+  height: 25px;
+  background-color: #EAEAEA;
+  border-style: none;
+  position: absolute;
+  right: 40px;
+  top: 19px;
+  border-radius: 3px;
+}
+.agree {
+  margin-top: 10px;
+}
+.agree input.checkbox {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+.agree a {
+  padding-left: 10px;
+  color: #999;
+}
+input.submit {
+  background-color: #35B558;
+  color: #fff;
+  margin-top: 13px;
+}
+.content-soc p {
+  padding: 50px 0 0 35px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.content-soc p a {
+  color: #35B558;
+}
+.content-soc .soc-list {
+  border-top: 1px solid #F2F2F2;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 150px;
+  position: relative;
+}
+.soc-list span.title {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 12px;
+  left: 50%;
+  top: -6px;
+  margin-left: -50px;
+  text-align: center;
+  line-height: 12px;
+}
+.soc-list span.fa {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid red;
+  text-align: center;
+  line-height: 50px;
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 16px;
+  margin-top: 30px;
+}
+.soc-list span.blue {
+   border: 2px solid #00AAFF;
+   color: #00AAFF;
+ }
+.soc-list span.green {
+  border: 2px solid #04BE05;
+  color: #04BE05;
+}
+.soc-list span.grey {
+   border: 2px solid grey;
+   color: grey;
+ }
+.soc-list span.blue:hover {
+  color: #fff;
+  background-color: #00AAFF;
+}
+.soc-list span.green:hover {
+  background-color: #04BE05;
+  color: #fff;
+}
+.soc-list span.fa-weibo:hover {
+  background-color: red;
+  color: #fff;
+}
+.soc-list span.grey:hover {
+  background-color: grey;
+  color: #fff;
+}

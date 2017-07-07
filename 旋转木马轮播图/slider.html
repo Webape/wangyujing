@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		img {
+			vertical-align: top;
+		}
+		.demo {
+			width: 1200px;
+			margin: 100px auto;
+			position: relative;
+		}
+		.slider {
+			height: 500px;
+		}
+		ul {
+			list-style: none;
+		}
+		ul img {
+			width: 100%;
+		}
+		ul li {
+			position: absolute;
+			left: 200px;
+			top: 0;
+			cursor: pointer;
+		}
+		.btn span {
+			position: absolute;
+			width: 76px;
+			height: 112px;
+			top: 200px;
+			cursor: pointer;
+			opacity: 0;
+		}
+		span.prev {
+			left: -100px;
+			background: url(images/prev.png) no-repeat;
+		}
+		span.next {
+			right: -100px;
+			background: url(images/next.png) no-repeat;
+		}
+	</style>
+	<script src="js/animate.js"></script>
+	<script>
+		window.onload = function(){
+			var ul = document.getElementById("ul");
+			var btn = document.getElementById("btn");
+			var lis = ul.children;
+			var demo = document.getElementById("demo");
+			var json = [
+    			{   //  1
+    			    width:400,
+    			    top:20,
+    			    left:50,
+    			    opacity:20,
+    			    z:2
+    			},
+    			{  // 2
+    			    width:600,
+    			    top:70,
+    			    left:0,
+    			    opacity:80,
+    			    z:3
+    			},
+    			{   // 3
+    			    width:800,
+    			    top:100,
+    			    left:200,
+    			    opacity:100,
+    			    z:4
+    			},
+    			{  // 4
+    			    width:600,
+    			    top:70,
+    			    left:600,
+    			    opacity:80,
+    			    z:3
+    			},
+    			{   //5
+    			    width:400,
+    			    top:20,
+    			    left:750,
+    			    opacity:20,
+    			    z:2
+    			}
+			];
+			slider();
+			demo.onmouseover = function(){
+				animate(btn.children[0],{opacity: 100});
+				animate(btn.children[1],{opacity: 100});
+			}
+			demo.onmouseout = function(){
+				animate(btn.children[0],{opacity: 0});
+				animate(btn.children[1],{opacity: 0});
+			}
+			var jieliu = true;
+			for(var k in btn.children){
+				btn.children[k].onclick = function(){
+					if(this.className == "prev"){
+						//alert("prev");
+						if(jieliu == true){
+							slider(false);
+							jieliu = false;
+						}
+					}
+					if(this.className == "next"){
+						//alert("next");
+						if(jieliu == true){
+							slider(true);
+							jieliu = false;
+						}
+					}
+				}
+			}
+
+			function slider(flag){
+				if(flag){
+					json.unshift(json.pop());
+				}
+				else {
+					json.push(json.shift());
+				}
+				for(var i = 0; i < lis.length; i++){
+					animate(lis[i],{
+						width: json[i].width,
+						top: json[i].top,
+						opacity: json[i].opacity,
+						zIndex: json[i].z,
+						left: json[i].left
+					},function(){jieliu = true})
+				}
+			}
+
+			var timer = null;
+			timer = setInterval(function(){
+				slider(true);
+			},2000)
+
+
+			demo.onmouseover = function(){
+				clearInterval(timer);
+			}
+			demo.onmouseout = function(){
+				clearInterval(timer);
+				timer = setInterval(function(){
+					slider(true);
+				},2000)
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div class="demo" id="demo">
+		<div class="slider">
+			<ul id="ul">
+				<li><img src="images/slidepic1.jpg" alt=""></li>
+				<li><img src="images/slidepic2.jpg" alt=""></li>
+				<li><img src="images/slidepic3.jpg" alt=""></li>
+				<li><img src="images/slidepic4.jpg" alt=""></li>
+				<li><img src="images/slidepic5.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="btn" id="btn">
+			<span class="prev"></span>
+			<span class="next"></span>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		.slider {
+			width: 670px;
+			height: 240px;
+			margin: 100px auto;
+			position: relative;
+		}
+		.slider-wrap {
+
+		}
+		.slider-wrap li {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.point {
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+		}
+		.point li {
+			float: left;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 20px;
+			cursor: pointer;
+			color: #000;
+			margin-left: 5px;
+			background-color: rgba(0,0,0,.6);
+		}
+		.point .current {
+			background-color: rgba(255,255,255,.6)
+		}
+	</style>
+	<script src="../jquery-1.11.1.js"></script>
+	<script>
+		$(function(){
+			for(var i = 0; i < $(".slider-wrap li").length; i++){
+				var index = i + 1;
+				var li = $("<li>"+index+"</li>");
+				$(".point ul").append(li);
+			}
+			$(".point li").on("mouseenter",function(){
+				$(this).addClass("current").siblings().removeClass("current");
+				$(".slider-wrap li").eq($(this).index()).stop().fadeIn("fast").stop().siblings().stop().fadeOut();
+			})
+			$(".point li").on("mouseleave",function(){
+				$(this).removeClass("current");
+			})
+
+		})
+	</script>
+</head>
+<body>
+	<div class="slider">
+		<ul class="slider-wrap">
+			<li><a href="#"><img src="images/1.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/2.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/3.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/4.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/5.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/6.jpg" alt=""></a></li>
+		</ul>
+		<div class="point">
+			<ul>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

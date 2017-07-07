@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		img {
+			vertical-align: top;
+		}
+		.wrap {
+			margin: 100px auto;
+			width: 752px;
+			border: 1px solid #ccc;
+			overflow: hidden;
+			padding: 0 10px 10px 0;
+		}
+		.wrap ul li {
+			float: left;
+			margin: 10px 0 0 10px;
+			position: relative;
+			overflow: hidden;
+		}
+		.wrap div,.wrap p {
+			position: absolute;
+			width: 178px;
+			height: 25px;
+			bottom: -25px;
+			color: white;
+			text-align: center;
+			line-height: 25px;
+			font-size: 14px;
+			font-family: arial;
+		}
+		.wrap div {
+			background-color: #000;
+			opacity: 0.5;
+		}
+		.wrap p {
+			background: url(images/bg.png) no-repeat 5px 0;
+			z-index: 11;
+		}
+	</style>
+	<script src="../jquery-1.11.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".wrap li")
+						.append("<div></div>")
+						.children("div")
+						.prev("p")
+						.each(function(index,ele){
+							//console.log(index);
+							//console.log(ele);
+							$(this).css("background-position","5px "+-index*25+"px")
+						})
+			$(".wrap li").mouseenter(function(){
+				$(this).children("div,p").stop().animate({
+					"bottom": 0
+				},200)
+			})
+			$(".wrap li").mouseleave(function(){
+				$(this).children("div,p").stop().animate({
+					"bottom":"-25px"
+				},200)
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<ul>
+			<li>
+				<a href=""><img src="images/01.jpg" alt=""></a>
+				<p>百度一下，你就知道</p>
+			</li>
+			<li>
+				<a href=""><img src="images/02.jpg" alt=""></a>
+				<p>淘宝一下，你就知道</p>
+			</li>
+			<li>
+				<a href=""><img src="images/03.jpg" alt=""></a>
+				<p>新浪一下，你就知道</p>
+			</li>
+			<li>
+				<a href=""><img src="images/04.jpg" alt=""></a>
+				<p>网易一下，你就知道</p>
+			</li>
+			<li>
+				<a href=""><img src="images/05.jpg" alt=""></a>
+				<p>搜狐一下，你就知道</p>
+			</li>
+			<li>
+				<a href=""><img src="images/06.jpg" alt=""></a>
+				<p>腾讯一下，你就知道</p>
+			</li>
+			<li>
+				<a href=""><img src="images/07.jpg" alt=""></a>
+				<p>优酷一下，你就知道</p>
+			</li>
+			<li>
+				<a href=""><img src="images/08.jpg" alt=""></a>
+				<p>京东一下，你就知道</p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
