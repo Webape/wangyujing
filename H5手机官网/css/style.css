@@ -1,0 +1,346 @@
+header {
+    background-color: #fafafa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+.container {
+    width: 1470px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+header .container .logo {
+    float: left;
+    width:150px;
+    height:40px;
+    padding-top: 10px;
+}
+header .container .logo a {
+    float: left;
+    width:40px;
+    height:40px;
+}
+header .container .logo span {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 20px;
+}
+header .container nav {
+    float: right;
+    height: 40px;
+    padding-top: 10px;
+    position: relative;
+}
+header nav a {
+    float: left;
+    width:60px;
+    margin: 0 20px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #14191e;
+}
+header .line {
+    width:40px;
+    height:2px;
+    background-color: red;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    transition: left 0.5s;
+}
+header .container nav a.current {
+    color: red;
+}
+header .container nav a:hover {
+    color: red;
+}
+header .container nav a.btn-buy {
+    width: 100px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+section.facade {
+    background: url(../img/bg-screen-1.png) no-repeat center bottom;
+    background-size: cover;
+    text-align: center;
+}
+section.facade h1 {
+    position:absolute;
+    width: 100%;
+    top: 160px;
+    font-size: 42px;
+    color: #fff;
+    font-weight: lighter;
+}
+section.facade h1 span {
+    color: red;
+    font-size: 42px;
+}
+section.facade .phone-1 {
+    background: url(../img/screen-1-phone.png);
+    width:1375px;
+    height:305px;
+    position: absolute;
+    left: 50%;
+    bottom: 180px;
+    margin-left: -687px;
+    z-index: 3;
+}
+section.facade .shadow{
+    position: absolute;
+    width: 1233px;
+    height: 411px;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -616px;
+    background: url(../img/screen-1-shadow.png) no-repeat;
+    z-index: 2;
+}
+section.deploy {
+    background-color: #fafafa;
+}
+section.deploy h1 {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    color: red;
+    font-weight: lighter;
+}
+section.deploy h2 {
+    width: 100%;
+    color: rgb(7,17,27);
+    position: absolute;
+    top: 190px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: lighter;
+}
+section.deploy .phone-2 {
+    width:800px;
+    height:873px;
+    background: url(../img/bg-screen-2.png) no-repeat;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    margin-left: -464px;
+}
+section.deploy .phone-2 .angle {
+    width: 200px;
+    position:absolute;
+    font-size: 24px;
+    color: #4d555d;
+
+}
+section.deploy .phone-2 .angle-1 {
+    background: url(../img/icon-point-right.png) no-repeat right center;
+    top: 149px;
+    left: -135px;
+}
+section.deploy .phone-2 .angle-2 {
+    text-align: right;
+    background: url(../img/icon-point-left.png) no-repeat left center;
+    right: 25px;
+    top: 35px;
+}
+section.deploy .phone-2 .angle-3 {
+    background: url(../img/icon-point-left.png) no-repeat left center;
+    text-align: right;
+    right: -70px;
+    top: 400px;
+
+}
+section.model {
+    background-color: #a71316;
+}
+section.model .container {
+    width:1200px;
+    height:800px;
+    margin: 0 auto;
+    position: relative;
+}
+section.model .container h1 {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    font-size: 36px;
+    color: #fff;
+    width: 580px;
+    font-weight: lighter;
+}
+section.model .container h2 {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    font-size: 16px;
+    color:#fff;
+    font-weight: lighter;
+}
+section.model .container .argument {
+    width:328px;
+    height:288px;
+    position: absolute;
+    bottom: 140px;
+    left: 5px;
+}
+section.model .container .argument .argument-item {
+    float: left;
+    width:138px;
+    height:118px;
+    border: 1px solid #d97173;
+    -webkit-border-radius:3px;
+       -moz-border-radius:3px;
+            border-radius:3px;
+    margin: 0 24px 24px 0;
+    color: #fff;
+    font-weight: lighter;
+}
+section.model .container .argument .argument-item h3 {
+    font-size: 36px;
+    padding-top: 23px;
+    text-align: center;
+}
+section.model .container .argument .argument-item p {
+    text-align: center;
+    font-size: 14px;
+}
+section.model .container .phone-3 {
+    position: absolute;
+    width:729px;
+    height: 900px;
+    left: 465px;
+    top: 200px;
+    background: url(../img/bg-screen-3.png) no-repeat;
+}
+section.explain .container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+section.explain .container h1 {
+    position: absolute;
+    width: 100%;
+    font-size: 42px;
+    top: 80px;
+    text-align: center;
+    color: #f01414;
+    font-weight: lighter;
+}
+section.explain .container h2 {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    font-weight: lighter;
+}
+section.explain .container .phone-types {
+    width:1300px;
+    margin-left: 30px;
+    height:270px;
+    position: absolute;
+    bottom: 220px;
+    text-align: center;
+    font-size: 16px;
+}
+section.explain .container .phone-types .phone-types-items {
+    width: 220px;
+    height: 270px;
+    float: left;
+    margin-right: 90px;
+    position: relative;
+}
+section.explain .container .phone-types .phone-types-items-1 {
+     background: url(../img/phone-1.png) no-repeat center left;
+ }
+section.explain .container .phone-types .phone-types-items-2 {
+    background: url(../img/phone-2.png) no-repeat center left;
+}
+section.explain .container .phone-types .phone-types-items-3 {
+    background: url(../img/phone-3.png) no-repeat center left;
+}
+section.explain .container .phone-types .phone-types-items-4 {
+    background: url(../img/phone-4.png) no-repeat center left;
+}
+section.explain .container .phone-types .phone-types-items h3 {
+    width:100%;
+    position: absolute;
+    top: 300px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+section.explain .container .phone-types .phone-types-items p {
+    width:100%;
+    position: absolute;
+    top: 328px;
+    font-size: 9px;
+    font-weight: lighter;
+}
+section.other {
+    background-color: #d9dde1;
+}
+section.other .container {
+    width:1200px;
+    margin: 0 auto;
+
+}
+section.other .container h1 {
+    position: absolute;
+    width: 100%;
+    top: 180px;
+    font-size: 42px;
+    color: #f01414;
+    text-align: center;
+    font-weight:lighter;
+}
+section.other .container h2 {
+    position: absolute;
+    top: 270px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-weight:lighter;
+}
+section.other .bg-animation {
+    width: 100%;
+    height:370px;
+    position: absolute;
+    background: url(../img/bg-screen-5.png) no-repeat bottom center;
+    -webkit-background-size:cover;
+    background-size:cover;
+    bottom: -100px;
+}
+section.shopping {
+    height:80px;
+    padding: 120px 0;
+    background: url(../img/bg-screen-buy.png) no-repeat center top;
+}
+section.shopping a.btn-shopping {
+    display: block;
+    width: 240px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    background-color: #f01414;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+footer {
+    height:80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #07111b;
+    color:#fff;
+}

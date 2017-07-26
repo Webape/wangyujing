@@ -1,0 +1,192 @@
+/* 第一屏 */
+section.facade h1,
+section.facade .phone-1,
+section.facade .shadow {
+    transition: all 1s;
+}
+section.facade h1.animate-init,
+section.facade div:nth-child(3).animate-init {
+    opacity: 0;
+    transform: translate(0,100%);
+}
+section.facade h1.animate-done,
+section.facade div:nth-child(3).animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+section.facade div.animate-init {
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+section.facade div.animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* 第二屏 */
+section.deploy h1,
+section.deploy h2,
+section.deploy .phone-2 {
+    transition: all 1s;
+}
+section.deploy h1.animate-init,
+section.deploy .animate-init {
+    opacity: 0;
+    transform: translate(0,100%);
+}
+section.deploy h2.animate-init {
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+section.deploy h1.animate-done,
+section.deploy .animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+section.deploy h2.animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+/* 第三屏 */
+section.model h1,
+section.model h2,
+section.model .argument,
+section.model .phone-3 {
+    transition: all 1s;
+}
+section.model h1.animate-init,
+section.model .container div:nth-child(4).animate-init {
+    opacity: 0;
+    transform: translate(0,100%);
+}
+section.model h2.animate-init {
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+section.model .container div:nth-child(3).animate-init {
+    opacity: 0;
+    transform: scale(0);
+}
+section.model h1.animate-done,
+section.model .container div:nth-child(4).animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+section.model h2.animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+section.model .container div:nth-child(3).animate-done {
+    opacity: 1;
+    transform: scale(1);
+}
+section.model .container .argument .argument-item {
+    transition: all 1s;
+}
+section.model .container .argument .argument-item:hover {
+    transform: scale(1.2);
+}
+
+
+/* 第四屏 */
+section.explain h1,
+section.explain h2 {
+    transition: all 1s;
+}
+section.explain .phone-types-items-1 {
+    transition: all 1s;
+}
+section.explain .phone-types-items-2 {
+    transition: all 1s 0.5s;
+}
+section.explain .phone-types-items-3 {
+    transition: all 1s 1s;
+}
+section.explain .phone-types-items-4 {
+    transition: all 1s 1.5s;
+}
+section.explain h1.animate-init {
+    opacity: 0;
+    transform: translate(0,100%);
+}
+section.explain h2.animate-init,
+section.explain .container .phone-types .animate-init {
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+section.explain h1.animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+section.explain h2.animate-done,
+section.explain .container .phone-types .animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* 第五屏 */
+section.facade h1,
+section.facade .phone-1,
+section.facade .shadow {
+    transition: all 1s;
+}
+section.facade h1.animate-init,
+section.facade div:nth-child(3).animate-init {
+    opacity: 0;
+    transform: translate(0,100%);
+}
+section.facade h1.animate-done,
+section.facade div:nth-child(3).animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+section.facade div.animate-init {
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+section.facade div.animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+section.other h1,
+section.other h2,
+section.other .bg-animation {
+    transition: all 1s;
+}
+section.other h1.animate-init,
+section.other .container + div.animate-init {
+    opacity: 0;
+    transform: translate(0,100%);
+}
+section.other h2.animate-init {
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+section.other h1.animate-done,
+section.other .container + div.animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+section.other h2.animate-done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+/* header */
+.header-animate-done {
+    transition: all 1s;
+    background-color: rgba(0,0,0,.5);
+}
+.logo-animate-done {
+    color: #fff;
+    transition: all 1s;
+}
+.container nav a.nav-animate-done {
+    color: #fff;
+    transition: all 1s;
+}
