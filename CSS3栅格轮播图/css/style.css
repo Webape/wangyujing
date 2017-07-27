@@ -1,0 +1,83 @@
+.wrap-img {
+    float: left;
+    width: 150px;
+    height:400px;
+    position: relative;
+    overflow: hidden;
+}
+.wrap-img span {
+    position: absolute;
+    width:150px;
+    height: 400px;
+    left: -150px;
+    top: 0;
+    overflow: hidden;
+    -webkit-transition: left 0.5s ease 0s;
+       -moz-transition: left 0.5s ease 0s;
+        -ms-transition: left 0.5s ease 0s;
+         -o-transition: left 0.5s ease 0s;
+            transition: left 0.5s ease 0s;
+}
+.wrap-img span:nth-child(1){
+    background: url(../images/1.jpg);
+}
+.wrap-img span:nth-child(2){
+    background: url(../images/2.jpg);
+}
+.wrap-img span:nth-child(3){
+    background: url(../images/3.jpg);
+}
+.wrap-img span:nth-child(4){
+    background: url(../images/4.jpg);
+}
+.container .wrap-img-1 span {
+    background-position: 0 0;
+}
+.container .wrap-img-2 span {
+    background-position: -150px 0;
+}
+.container .wrap-img-3 span {
+    background-position: -300px 0;
+}
+.container .wrap-img-4 span {
+    background-position: -450px 0;
+}
+.container input.btn-1:checked ~ .wrap-img span:nth-child(1),
+.container input.btn-2:checked ~ .wrap-img span:nth-child(2),
+.container input.btn-3:checked ~ .wrap-img span:nth-child(3),
+.container input.btn-4:checked ~ .wrap-img span:nth-child(4){
+    z-index: 10;
+    left: 0;
+    -webkit-animation: none;
+       -moz-animation: none;
+        -ms-animation: none;
+         -o-animation: none;
+            animation: none;
+}
+.container input:checked ~ .wrap-img span {
+    will-change: all;
+    -webkit-animation: slideOut 0.5s ease 0s;
+       -moz-animation: slideOut 0.5s ease 0s;
+        -ms-animation: slideOut 0.5s ease 0s;
+         -o-animation: slideOut 0.5s ease 0s;
+            animation: slideOut 0.5s ease 0s;
+}
+@-webkit-keyframes slideOut {
+    from {
+        left: 0;
+    }
+    to {
+        left: 150px;
+    }
+}
+@-moz-keyframes slideOut {
+    from {
+        left: 0;
+    }
+    to {
+        left: 150px;
+    }
+}
+
+
+
